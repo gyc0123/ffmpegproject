@@ -1,6 +1,8 @@
 name: Compile FFmpeg
 on: [push]
-
+default: 
+  run: 
+    shell: "cmd"
 jobs:
   build:
     runs-on: windows-latest
