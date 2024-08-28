@@ -17,11 +17,15 @@ jobs:
           where cl
           where link
           where lib
+          ::install Visual C++ 2010 Service Pack 1 Redistributable
           curl -O https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe
           vcredist_x64.exe /install /passive /norestart
           set MSYS2_PATH_TYPE=inherit
           set CHERE_INVOKING=1
           ::C:\msys64\usr\bin\bash.exe -lc "which cl"
           C:\msys64\usr\bin\bash.exe -lc "./build_ffmpeg.sh"
-
+          ::release build
+          echo %GITHUB_REPOSITORY%
+          python -m pip install requests
+          python release.py --token ${{ secrets.GITHUB_TOKEN }}
 

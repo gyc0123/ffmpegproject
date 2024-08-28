@@ -20,11 +20,11 @@ yasm --version
 which yasm
 mkdir build
 cd ffmpeg
-echo configure
-./configure --target-os=win64 --arch=x86_64 --toolchain=msvc --prefix=../build
-echo make
-make -j4
-make install
+#echo configure
+#./configure --target-os=win64 --arch=x86_64 --toolchain=msvc --prefix=../build
+#echo make
+#make -j4
+#make install
 
 ls .
 ls ./FFmpeg
@@ -33,3 +33,4 @@ ls ./build
 ls ./FFmpeg/libavformat
 ls ./FFmpeg/libavcodec
 ls ./FFmpeg/libavutil
+
