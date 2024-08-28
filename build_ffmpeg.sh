@@ -19,6 +19,7 @@ echo configure
 ./configure --target-os=win64 --arch=x86_64 --toolchain=msvc --prefix=../build
 echo make
 make -j4
+make install
 
 ls .
 ls ./FFmpeg
