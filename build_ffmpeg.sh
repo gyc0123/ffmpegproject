@@ -5,6 +5,8 @@
 #echo $PATH
 
 echo $PATH
+ls /usr
+ls /usr/local
 exit
 pacman -S make --noconfirm > /dev/null 
 pacman -S diffutils --noconfirm > /dev/null 
