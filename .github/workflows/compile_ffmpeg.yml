@@ -15,7 +15,7 @@ jobs:
           where link
           where lib
           set MSYS2_PATH_TYPE=inherit
-          CHERE_INVOKING=1
+          set CHERE_INVOKING=1
           C:\msys64\usr\bin\bash.exe -lc "which cl"
           C:\msys64\usr\bin\bash.exe -lc "./build_ffmpeg.sh"
           ##add cl to first of path
