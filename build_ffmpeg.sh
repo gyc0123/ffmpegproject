@@ -5,7 +5,7 @@ which lib
 echo "add cl to first of path"
 cldir=$(dirname "$(which cl)")
 echo $cldir
-export PATH=cldir:$PATH
+export PATH=$cldir:$PATH
 echo $PATH
 echo "which again"
 which cl
