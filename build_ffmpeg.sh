@@ -26,6 +26,7 @@ cd ffmpeg
 #make -j4
 #make install
 
+cd ..
 ls .
 ls ./FFmpeg
 ls ./build
