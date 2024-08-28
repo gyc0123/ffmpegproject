@@ -14,15 +14,17 @@ jobs:
         #run: dir "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build"
       - name: enter Developer Command Prompt and enter msys2
         run: |
-          "/C/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/Build/vcvars64.bat"
-          which cl
-          which link
-          which lib
+          call "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Auxiliary\\Build\vcvars64.bat"
+          where cl
+          where link
+          where lib
           #enter msys2
-          #cldir=$(dirname $(which cl))
-          #echo $cldir
-          #export PATH=cldir:$PATH
-          #echo $PATH
+          dir "C:\msys64"
+          call "C:\\msys64\\msys2_shell.cmd" -full-path
+          cldir=$(dirname $(which cl))
+          echo $cldir
+          export PATH=cldir:$PATH
+          echo $PATH
           where cl
           where link
           where lib
