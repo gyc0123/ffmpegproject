@@ -10,6 +10,7 @@ pacman -S diffutils --noconfirm > /dev/null
 mkdir -p /usr/local/bin
 curl -o /usr/local/bin/yasm.exe http://www.tortall.net/projects/yasm/releases/yasm-1.3.0-win64.exe
 build_dir=$(pwd)/build
+mkdir build
 cd ffmpeg
 echo configure
 ./configure --target-os=win64 --arch=x86_64 --toolchain=msvc --prefix=../build
