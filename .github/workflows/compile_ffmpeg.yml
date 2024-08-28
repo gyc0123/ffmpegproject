@@ -27,5 +27,5 @@ jobs:
           ::release build
           echo %GITHUB_REPOSITORY%
           python -m pip install requests
-          python release.py --token ${{ secrets.GITHUB_TOKEN }}
+          python release.py --token ${{ secrets.GITHUB_TOKEN }} --repository %GITHUB_REPOSITORY%
 

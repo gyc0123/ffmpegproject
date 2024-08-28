@@ -1,0 +1,10 @@
+{
+    "libavcodec.a":"C:\\msys64\\usr\\local\\lib\\libavcodec.a", 
+    "libavdevice.a":"C:\\msys64\\usr\\local\\lib\\libavdevice.a", 
+    "libavfilter.a":"C:\\msys64\\usr\\local\\lib\\libavfilter.a", 
+    "libavformat.a":"C:\\msys64\\usr\\local\\lib\\libavformat.a", 
+    "libavutil.a":"C:\\msys64\\usr\\local\\lib\\libavutil.a", 
+    "libpostproc.a":"C:\\msys64\\usr\\local\\lib\\libpostproc.a", 
+    "libswresample.a":"C:\\msys64\\usr\\local\\lib\\libswresample.a", 
+    "libswscale.a":"C:\\msys64\\usr\\local\\lib\\libswscale.a"
+}
