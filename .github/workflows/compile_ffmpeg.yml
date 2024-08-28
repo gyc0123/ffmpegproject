@@ -1,6 +1,7 @@
 name: Compile FFmpeg
 on: [push]
-default: 
+
+defaults: 
   run: 
     shell: "cmd"
 jobs:
