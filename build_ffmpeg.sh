@@ -1,12 +1,16 @@
+echo which
 which cl
 which link
 which lib
-##add cl to first of path
-#cldir=$(dirname $(which cl))
-#echo $cldir
-#export PATH=cldir:$PATH
-#echo $PATH
-
+echo "add cl to first of path"
+cldir=$(dirname $(which cl))
+echo $cldir
+export PATH=cldir:$PATH
+echo $PATH
+echo "which again"
+which cl
+which link
+which lib
 
 pacman -S make --noconfirm > /dev/null 
 pacman -S diffutils --noconfirm > /dev/null 
