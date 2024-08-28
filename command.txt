@@ -1,0 +1,10 @@
+::open x64 developer terminal
+msys2_shell.cmd -full-path
+
+#shift + insert: paste
+pacman -S make
+pacman -S diffutils
+export PATH="/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/":$PATH
+cd /d/coding/ffmpeg/sources/FFmpeg/
+./configure --target-os=win64 --arch=x86_64 --toolchain=msvc 
+make
