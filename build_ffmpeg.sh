@@ -4,12 +4,10 @@
 #export PATH=cldir:$PATH
 #echo $PATH
 
-echo $PATH
-ls /usr
-ls /usr/local
-exit
+
 pacman -S make --noconfirm > /dev/null 
 pacman -S diffutils --noconfirm > /dev/null 
+mkdir -p /usr/local/bin
 curl -o /usr/local/bin/yasm.exe http://www.tortall.net/projects/yasm/releases/yasm-1.3.0-win64.exe
 build_dir=$(pwd)/build
 cd ffmpeg
