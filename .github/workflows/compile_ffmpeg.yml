@@ -18,7 +18,7 @@ jobs:
           where link
           where lib
           curl -O https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe
-          vcredist_x64.exe /install /passive /quiet /norestart
+          vcredist_x64.exe /install /passive /norestart
           set MSYS2_PATH_TYPE=inherit
           set CHERE_INVOKING=1
           ::C:\msys64\usr\bin\bash.exe -lc "which cl"
