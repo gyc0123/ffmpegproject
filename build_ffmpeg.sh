@@ -7,7 +7,7 @@
 
 pacman -S make --noconfirm > /dev/null 
 pacman -S diffutils --noconfirm > /dev/null 
-
+curl -o /usr/local/bin/yasm.exe http://www.tortall.net/projects/yasm/releases/yasm-1.3.0-win64.exe
 build_dir=$(pwd)/build
 cd ffmpeg
 echo configure
