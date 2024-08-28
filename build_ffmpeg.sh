@@ -5,13 +5,13 @@
 #echo $PATH
 
 
-pacman -S make --noconfirm
-pacman -S diffutils --noconfirm
+pacman -S make --noconfirm > /dev/null 
+pacman -S diffutils --noconfirm > /dev/null 
 
 build_dir=$(pwd)/build
 cd ffmpeg
 echo configure
-./configure --target-os=win64 --arch=x86_64 --toolchain=msvc -prefix=${build_dir}
+./configure --target-os=win64 --arch=x86_64 --toolchain=msvc --prefix=../build
 echo make
 make -j4
 
