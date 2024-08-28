@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: enter Developer Command Prompt and enter msys2
         run: |
-          "/C/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/Build/vcvars64.bat"
+          call "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Auxiliary\\Build\vcvars64.bat"
           where cl
           where link
           where lib
