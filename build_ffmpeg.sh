@@ -8,10 +8,14 @@
 pacman -S make --noconfirm
 pacman -S diffutils --noconfirm
 
-#cd ffmpeg
-#./configure --target-os=win64 --arch=x86_64 --toolchain=msvc -prefix=../build
-#make -j4
+cd ffmpeg
+./configure --target-os=win64 --arch=x86_64 --toolchain=msvc -prefix=../build
+make -j4
 
 ls .
-ls ./ffmpeg
+ls ./FFmpeg
 ls ./build
+
+ls ./FFmpeg/libavformat
+ls ./FFmpeg/libavcodec
+ls ./FFmpeg/libavutil
