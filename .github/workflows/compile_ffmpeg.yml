@@ -6,4 +6,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: list files
-        run: dir "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build"
+        run: dir "C:\Program Files\Microsoft Visual Studio\2022"
+        #run: dir "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build"
