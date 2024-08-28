@@ -15,12 +15,12 @@ jobs:
           where link
           where lib
           set MSYS2_PATH_TYPE=inherit
+          CHERE_INVOKING=1
           C:\msys64\usr\bin\bash.exe -lc "which cl"
+          C:\msys64\usr\bin\bash.exe -lc "./build_ffmpeg.sh"
           ##add cl to first of path
           #cldir=$(dirname $(which cl))
           #echo $cldir
           #export PATH=cldir:$PATH
           #echo $PATH
-          where cl
-          where link
-          where lib
+
