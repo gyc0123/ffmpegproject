@@ -58,7 +58,7 @@ release_id = r.json()['id']
 #upload release asset
 
 f = open('releasefiles.json')
-assets_to_upload = json.load(f)[tag_name]
+assets_to_upload = json.load(f)
 f.close()
 headers = {'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28'}
 url = 'https://uploads.github.com/repos/gyc0123/vulkan-and-opengl/releases/' + str(release_id) + '/assets'
