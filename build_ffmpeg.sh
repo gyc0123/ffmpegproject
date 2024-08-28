@@ -12,3 +12,6 @@ pacman -S diffutils --noconfirm
 #./configure --target-os=win64 --arch=x86_64 --toolchain=msvc -prefix=../build
 #make -j4
 
+ls .
+ls ./ffmpeg
+ls ./build
