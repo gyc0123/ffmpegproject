@@ -17,4 +17,10 @@ jobs:
           where cl
           where link
           where lib
-          where pkgconfig
+      - name: enter msys2
+        run: |
+          dir "C:\msys64"
+          call "C:\\msys64\\usr\\bin\\bash"
+          where cl
+          where link
+          where lib
