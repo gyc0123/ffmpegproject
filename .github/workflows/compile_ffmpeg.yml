@@ -17,11 +17,13 @@ jobs:
           where cl
           where link
           where lib
-          
+          #enter msys2
           dir "C:\msys64"
           call "C:\\msys64\\msys2_shell.cmd" -full-path
           cldir=$(dirname $(which cl))
+          echo $cldir
           export PATH=cldir:$PATH
+          echo $PATH
           where cl
           where link
           where lib
