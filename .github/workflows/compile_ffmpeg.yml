@@ -5,6 +5,13 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - name: list files
+      - name: list files(check vcvars64.bat exists)
         run: dir "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build"
         #run: dir "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build"
+      - name: enter Developer Command Prompt
+        run: |
+          "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Auxiliary\\Build\vcvars64.bat"
+          where cl
+          where link
+          where lib
+          where pkgconfig
