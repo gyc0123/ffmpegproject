@@ -8,9 +8,10 @@
 pacman -S make --noconfirm
 pacman -S diffutils --noconfirm
 
+build_dir=$(pwd)/build
 cd ffmpeg
 echo configure
-./configure --target-os=win64 --arch=x86_64 --toolchain=msvc -prefix=../build
+./configure --target-os=win64 --arch=x86_64 --toolchain=msvc -prefix=${build_dir}
 echo make
 make -j4
 
