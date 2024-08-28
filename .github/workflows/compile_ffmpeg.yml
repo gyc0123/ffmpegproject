@@ -3,11 +3,12 @@ on: [push]
 
 defaults: 
   run: 
-    shell: "cmd"
+    shell: "msys2"
 jobs:
   build:
     runs-on: windows-latest
     steps:
+      - uses: msys2/setup-msys2@v2
       - name: list files(check vcvars64.bat exists)
         run: dir "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build"
         #run: dir "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build"
