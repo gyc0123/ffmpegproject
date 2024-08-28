@@ -9,8 +9,8 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-#        with:
-#          submodules: 'true'
+        with:
+          submodules: 'true'
       - name: enter Developer Command Prompt and enter msys2
         run: |
           call "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Auxiliary\\Build\vcvars64.bat"
