@@ -13,10 +13,12 @@ jobs:
           submodules: 'true'
       - name: enter Developer Command Prompt and enter msys2
         run: |
-          call "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Auxiliary\\Build\vcvars64.bat"
+          call "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Auxiliary\\Build\\vcvars64.bat"
           where cl
           where link
           where lib
+          curl -O https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe
+          vc_redist.x64.exe /install /passive /quiet /norestart
           set MSYS2_PATH_TYPE=inherit
           set CHERE_INVOKING=1
           ::C:\msys64\usr\bin\bash.exe -lc "which cl"
