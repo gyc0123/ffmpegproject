@@ -1,10 +1,10 @@
 {
-    "libavcodec.a":"C:\\msys64\\usr\\local\\lib\\libavcodec.a", 
-    "libavdevice.a":"C:\\msys64\\usr\\local\\lib\\libavdevice.a", 
-    "libavfilter.a":"C:\\msys64\\usr\\local\\lib\\libavfilter.a", 
-    "libavformat.a":"C:\\msys64\\usr\\local\\lib\\libavformat.a", 
-    "libavutil.a":"C:\\msys64\\usr\\local\\lib\\libavutil.a", 
-    "libpostproc.a":"C:\\msys64\\usr\\local\\lib\\libpostproc.a", 
-    "libswresample.a":"C:\\msys64\\usr\\local\\lib\\libswresample.a", 
-    "libswscale.a":"C:\\msys64\\usr\\local\\lib\\libswscale.a"
+    "avcodec.lib":"C:\\msys64\\usr\\local\\lib\\libavcodec.a", 
+    "avdevice.lib":"C:\\msys64\\usr\\local\\lib\\libavdevice.a", 
+    "avfilter.lib":"C:\\msys64\\usr\\local\\lib\\libavfilter.a", 
+    "avformat.lib":"C:\\msys64\\usr\\local\\lib\\libavformat.a", 
+    "avutil.lib":"C:\\msys64\\usr\\local\\lib\\libavutil.a", 
+    "postproc.lib":"C:\\msys64\\usr\\local\\lib\\libpostproc.a", 
+    "swresample.lib":"C:\\msys64\\usr\\local\\lib\\libswresample.a", 
+    "swscale.lib":"C:\\msys64\\usr\\local\\lib\\libswscale.a"
 }

@@ -12,7 +12,7 @@ args = parser.parse_args()
 token = args.token
 verify = args.verify
 repository = args.repository
-tag_name = 'static_library'
+tag_name = 'static_library_lib'
 #get release
 release_id = 0
 headers = {'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28'}
